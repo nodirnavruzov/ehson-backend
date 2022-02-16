@@ -1,0 +1,35 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "build": "cross-env NODE_ENV=production node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.6",
+    "mongoose-double": "^0.0.1",
+    "mongoose-paginate-v2": "^1.4.2",
+    "multer": "^1.4.3",
+    "passport": "^0.5.0",
+    "passport-headerapikey": "^1.2.2",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
