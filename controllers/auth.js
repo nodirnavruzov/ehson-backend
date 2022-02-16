@@ -14,8 +14,6 @@ module.exports.signin = async (req, res) => {
             }
             const correct = bcrypt.compareSync(req.body.password, candidate.password)
             if (correct) {
-                // need to check the role and origin from orgUsers
-                // if origin partners and you Easybooking user then not access
                 const token = jwt.sign({
                                     email: candidate.email,
                                     user_id: candidate._id
